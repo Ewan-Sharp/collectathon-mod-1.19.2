@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "collectmod",
+  "version": "${version}",
+
+  "name": "Collectathon Mod",
+  "description": "This is a funky lil mod for all yall nerds that like to collect stuff for the sake of collecting, or because its rare",
+  "authors": [
+    "frogdev"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.frogdev.collectmod.CollectMod"
+    ]
+  },
+  "mixins": [
+    "collectmod.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "fabric-api": "*",
+    "minecraft": "~1.19.2",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
